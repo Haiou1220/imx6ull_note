@@ -5,8 +5,13 @@
 https://pan.baidu.com/s/1y2R2aJyEExnCJ7FRqdaNdA  提取码：esdw 
 exports文件配置:
 e:\Pandownload\imx6u_nfs -public  -name:nfs
+-name 对外别名
+-public 指定所有用户可访问
+
 重启后,进入[计算机管理]查看NFS Server 服务是否有运行
 注意:ubuntu18.04只支持nfs 3和nfs 4，而uboot默认使用nfs 2
+haneWin:安装
+
 
 
 
