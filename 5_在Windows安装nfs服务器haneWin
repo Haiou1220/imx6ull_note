@@ -12,6 +12,12 @@ e:\Pandownload\imx6u_nfs -public  -name:nfs
 注意:ubuntu18.04只支持nfs 3和nfs 4，而uboot默认使用nfs 2
 haneWin:安装
 
+如果连接失败可以添加防火墙规则:
+在haneWin端口映射,可知端口号为:111, 1058, 2049
+分别新建TCP和UDP的入站规则:
+TCP：111, 1058, 2049
+UDP：111, 1058, 2049
+
 
 
 
