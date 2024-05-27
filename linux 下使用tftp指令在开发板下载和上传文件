@@ -1,0 +1,16 @@
+在pc端的windows中下载个“tftpd32”软件
+
+使用tftp从服务器（ip：192.168.1.23）下载 a.txt 文件
+tftp -gr a.txt 192.168.1.23
+g 表示get
+r 表示remote，从远端获取
+
+
+使用tftp向服务器（ip：192.168.1.23）上传 a.txt 文件
+tftp -pl a.txt -r remoteA.txt 192.168.1.23
+p 表示 put
+l 表示 local 
+r 表示 remote
+a.txt 是本地的文件
+remoteA.txt 是服务器上的文件，注意权限需要能写
+从本地上传文件
