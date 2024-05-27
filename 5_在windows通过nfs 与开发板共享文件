@@ -1,1 +1,5 @@
-1
+错误=>nfs# mount -t nfs  192.168.1.9:e:/Pandownload/imx6u_nfs   /mnt/nfs
+原因:报错mount.nfs: an incorrect mount option was specified,
+方法:加参数 -o nolock,nfsvers=3
+
+正确 => mount -t nfs -o nolock,nfsvers=3 192.168.1.9:/nfs   /mnt/nfs
