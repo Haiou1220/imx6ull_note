@@ -1,0 +1,13 @@
+由于通过USB烧录方式比较繁琐，且每次编译好可执行文件，都需要制作文件系统烧录到开发板，这里介绍一种比较简单的方式，
+通过nfs服务，将Windows的共享目录挂载到开发板的共享目录下，
+直接就可以通过nfs将可执行程序文件直接下发到开发板中，省去了镜像烧录的步骤。
+版本:汉化免费版 nfs1169.rar
+https://pan.baidu.com/s/1y2R2aJyEExnCJ7FRqdaNdA  提取码：esdw 
+exports文件配置:
+e:\Pandownload\imx6u_nfs -public  -name:nfs
+重启后,进入[计算机管理]查看NFS Server 服务是否有运行
+注意:ubuntu18.04只支持nfs 3和nfs 4，而uboot默认使用nfs 2
+
+
+
+
