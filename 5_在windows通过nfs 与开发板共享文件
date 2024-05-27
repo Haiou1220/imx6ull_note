@@ -3,8 +3,10 @@
 方法:加参数 -o nolock,nfsvers=3
 
 正确 => mount -t nfs -o nolock,nfsvers=3 192.168.1.9:/nfs   /mnt/nfs
-
+ps:nolock参数添加，避免阻塞主进程;挂载之前可以互相ping一下IP;
 
 卸载已挂载的nfs文件系统:
 命令:umount.nfs /mnt/nfs
 
+4. 设置开机挂载
+因为板端没有systemctl，直接将上述mount指令添加到init.d目录下设置开机自动执行即可。
